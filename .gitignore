@@ -1,0 +1,88 @@
+# ═══════════════════════════════════════════════════════════
+#  PixelPlaneWar · Unity 项目 .gitignore
+# ═══════════════════════════════════════════════════════════
+#
+#  设计原则：
+#    · 排除 Unity 与 Visual Studio 自动生成的目录/文件
+#    · Library 单目录 3.77 GB，必须排除（可完全重建）
+#    · 保留 Assets/ 与 ProjectSettings/
+#
+# ═══════════════════════════════════════════════════════════
+
+# ────────── Unity 自动生成 ──────────
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# ────────── Unity 编辑器的临时写入目录 ──────────
+.utmp/
+/Assets/UnityVS/
+
+# ────────── Visual Studio / Rider ──────────
+.vs/
+.idea/
+.vsconfig
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.VC.opendb
+
+# ────────── 构建产物 ──────────
+*_BurstDebugInformation_DoNotShip/
+*.aab
+*.unitypackage
+*.app
+
+# ────────── Burst 调试信息（不需要分发）──────────
+*_BurstDebugInformation_DoNotShip/
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+
+# ────────── 崩溃报告 ──────────
+sysinfo.txt
+crashlytics-build.properties
+
+# ────────── 安卓签名文件（绝对不能泄露）──────────
+*.keystore
+*.jks
+keystore.properties
+
+# ────────── 操作系统垃圾文件 ──────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+Thumbs.db
+desktop.ini
+
+# ────────── 临时/备份文件 ──────────
+*.bak
+*.bak_*
+*.tmp
+*~
+*.log
+_temp_*
+
+# ═══════════════════════════════════════════════════════════
+#  注意：Assets/ 下的 .meta 文件必须提交！
+#  它们保存资源 GUID，丢失会导致场景引用断裂。
+# ═══════════════════════════════════════════════════════════
